@@ -1,0 +1,86 @@
+.navigation {
+  &__link {
+    font-size: var(--fs-500);
+    color: var(--clr-neutral-100);
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 40em) {
+    &__link {
+      font-size: var(--fs-100);
+      font-weight: var(--fw-400);
+      text-transform: initial;
+    }
+  }
+}
+
+/* Hero */
+.page-title {
+  font-size: var(--fs-700);
+  text-transform: uppercase;
+  max-width: 15ch;
+  padding: 1rem 3rem 1rem 1.3rem;
+  color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+/* Section */
+.section-title {
+  font-size: var(--fs-600);
+  text-transform: uppercase;
+}
+
+.section-para {
+  line-height: 1.8;
+  font-family: var(--ff-alata);
+  color: var(--clr-neutral-200);
+  font-size: var(--fs-200);
+}
+
+/* btn */
+.btn {
+  font-family: var(--ff-alata);
+  color: var(--clr-neutral-900);
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-size: var(--fs-200);
+}
+
+@media screen and (min-width: 40em) {
+  .btn--bScreen {
+    font-size: 0.6rem;
+  }
+}
+
+/* Creation */
+.imageBox__caption {
+  font-size: var(--fs-500);
+  text-transform: uppercase;
+  width: 12rem;
+  line-height: 1;
+  color: var(--clr-neutral-100);
+
+  @media screen and (min-width: 40em) {
+    & {
+      font-size: var(--fs-200);
+    }
+  }
+
+  @media screen and (min-width: 50em) {
+    & {
+      font-size: var(--fs-300);
+    }
+  }
+
+  @media screen and (min-width: 60em) {
+    & {
+      font-size: var(--fs-400);
+    }
+  }
+
+  @media screen and (min-width: 70em) {
+    & {
+      font-size: var(--fs-600);
+    }
+  }
+}

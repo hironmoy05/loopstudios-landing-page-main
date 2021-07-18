@@ -1,0 +1,24 @@
+.btn {
+  padding: 1rem 4rem;
+  border: 2px solid hsla(0, 100%, 0%, 0.4);
+
+  &--sScreen {
+    color: var(--clr-neutral-400);
+    display: inline-block;
+  }
+
+  &--bScreen {
+    display: none;
+  }
+
+  @media screen and (min-width: 40em) {
+    &--sScreen {
+      display: none;
+    }
+
+    &--bScreen {
+      display: inline-block;
+      padding: 0.5rem 2rem;
+    }
+  }
+}

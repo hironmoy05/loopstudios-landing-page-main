@@ -1,0 +1,22 @@
+.split {
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    flex-basis: 100%;
+  }
+
+  & > * + * {
+    margin: var(--space, 1rem) 0 0 0;
+  }
+
+  @media screen and (min-width: 40em) {
+    & {
+      flex-direction: row;
+    }
+
+    & > * + * {
+      margin: 0 0 0 var(--space, 1rem);
+    }
+  }
+}

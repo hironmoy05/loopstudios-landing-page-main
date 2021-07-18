@@ -1,0 +1,112 @@
+.hamburger {
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    position: relative;
+    right: -5rem;
+  }
+
+  &__icon {
+    position: relative;
+    margin-top: 1.45rem;
+    right: 0.5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 2px;
+      display: inline-block;
+      background-color: var(--clr-neutral-100);
+      transition: all 0.4s cubic-bezier(0.81, 0.29, 0.27, 1.12);
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      top: 0.5rem;
+    }
+
+    &::after {
+      top: -0.5rem;
+    }
+  }
+
+  &__checkbox:checked + .hamburger__button .hamburger__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + .hamburger__button .hamburger__icon::before {
+    top: 0;
+    transform: rotate(225deg);
+  }
+
+  &__checkbox:checked + .hamburger__button .hamburger__icon::after {
+    top: 0;
+    transform: rotate(-225deg);
+  }
+}
+
+#root {
+  overflow: hidden;
+  position: relative;
+}
+
+.navigation-overlay {
+  width: 100vw;
+  height: 2000vh;
+  position: absolute;
+  top: 0;
+  right: -250vw;
+  z-index: -1;
+  background-color: var(--clr-neutral-400);
+  transition: right 0.5s cubic-bezier(0.7, 0.16, 0.92, 0.68);
+}
+
+.hamburger__checkbox:checked ~ .navigation-overlay {
+  right: 0;
+}
+
+.navigation .navigation__item {
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  left: 3rem;
+  top: 50%;
+  transition: all 0.2s cubic-bezier(1, 0.16, 0.49, 1.63);
+}
+
+@media screen and (min-width: 40em) {
+  .navigation .navigation__item {
+    opacity: 1;
+    visibility: visible;
+    position: initial;
+    top: 0;
+    left: 0;
+    transition: unset;
+  }
+}
+
+.hamburger__checkbox:checked ~ .navigation .navigation__item {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  transition: all 1s 0.3s cubic-bezier(1, 0.16, 0.49, 1.63);
+}
+
+@media screen and (min-width: 40em) {
+  .hamburger__button {
+    display: none;
+  }
+}

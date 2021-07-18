@@ -1,0 +1,46 @@
+.hero {
+  background: url("../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media screen and (min-width: 40em) {
+    & {
+      background: linear-gradient(
+          to right,
+          hsla(0, 0%, 0%, 0.1),
+          hsla(0, 0%, 0%, 0.5)
+        ),
+        url("../images/desktop/image-hero.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      object-fit: contain;
+      padding: 0 2rem;
+    }
+  }
+
+  & > .container {
+    height: 90vh;
+    position: relative;
+
+    & header {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @media screen and (min-width: 40em) {
+    & > .container {
+      height: 50vh;
+      & header {
+        position: relative;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -20%);
+      }
+    }
+  }
+}

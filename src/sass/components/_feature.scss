@@ -1,0 +1,39 @@
+.section-feature {
+  text-align: center;
+
+  @media screen and (min-width: 40em) {
+    & {
+      text-align: initial;
+      padding-top: 10rem;
+      padding-bottom: 13rem;
+    }
+
+    & .split > * + * {
+      width: 30%;
+    }
+  }
+
+  & .feature-content {
+    padding: 2rem 2.5rem;
+  }
+
+  @media screen and (min-width: 40em) {
+    & .section-title {
+      width: 15ch;
+    }
+
+    & .feature-content {
+      position: relative;
+      left: -5rem;
+      top: 10rem;
+      background-color: var(--clr-neutral-100);
+      max-width: 70%;
+      outline: 3em solid var(--clr-neutral-100);
+    }
+
+    & .section-para {
+      font-size: var(--fs-100);
+      max-width: 47ch;
+    }
+  }
+}
