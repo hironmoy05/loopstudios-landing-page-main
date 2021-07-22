@@ -8,7 +8,6 @@ function FeatureImage () {
         <source 
           srcSet={imageInteractiveD}
           media="(min-width: 40em)"
-          src={imageInteractiveD}
         />
         <img src={imageInteractiveM} alt="VR Set" />
       </picture>

@@ -22,120 +22,112 @@ function SectionGallery () {
   return (
     <div className="flex mt-xl" >
       <div className="imageBox split">
-          <picture>
-            <div className="shades"></div>
-                <source 
-                  srcSet={imageDeepEarthD}
-                  media="(min-width: 40em)"
-                  src={imageDeepEarthD}
-                />
-              <img src={imageDeepEarthM} alt="" className="imageBox__image" />
             <figure className="imageBox__shape">
+              <span className="shades"></span>
+                <picture>
+                      <source 
+                        srcSet={imageDeepEarthD}
+                        media="(min-width: 40em)"
+                      />
+                    <img src={imageDeepEarthM} alt="" className="imageBox__image" />
+                </picture>
               <figcaption className="imageBox__caption">
                 Deep<br /> Earth
               </figcaption>
             </figure>
-          </picture>
-          <picture>
-            <div className="shades"></div>
-            <source
-              srcSet={imageNightArcadeD}
-              media="(min-width: 40em)"
-              src={imageNightArcadeD}
-            />
-            <img src={imageNightArcadeM} alt="" className="imageBox__image" />
             <figure className="imageBox__shape">
+              <span className="shades"></span>
+                <picture>
+                  <source
+                    srcSet={imageNightArcadeD}
+                    media="(min-width: 40em)"
+                  />
+                  <img src={imageNightArcadeM} alt="" className="imageBox__image" />
+                </picture>
               <figcaption className="imageBox__caption">
                 Night<br /> Arcade
-            </figcaption>
+              </figcaption>
             </figure>
-          </picture>
-          <picture>
-          <div className="shades"></div>
-            <source 
-              srcSet={imageSoccerTeamD}
-              media="(min-width: 40em)"
-              src={imageSoccerTeamD}
-            />
-            <img src={imageSoccerTeamM} alt="" className="imageBox__image" />
             <figure className="imageBox__shape">
+              <span className="shades"></span>
+                <picture>
+                  <source 
+                    srcSet={imageSoccerTeamD}
+                    media="(min-width: 40em)"
+                  />
+                  <img src={imageSoccerTeamM} alt="" className="imageBox__image" />
+                </picture>
               <figcaption className="imageBox__caption">
                 Soccer<br /> Team VR
               </figcaption>
             </figure>
-          </picture>
-          <picture>
-          <div className="shades"></div>
-            <source 
-              srcSet={imageGridD}
-              media="(min-width: 40em)"
-              src={imageGridD}
-            />
-            <img src={imageGridM} alt="" className="imageBox__image" />
             <figure className="imageBox__shape">
+              <span className="shades"></span>
+                <picture>
+                  <source 
+                    srcSet={imageGridD}
+                    media="(min-width: 40em)"
+                  />
+                  <img src={imageGridM} alt="" className="imageBox__image" />
+                </picture>
             <figcaption className="imageBox__caption">
               The<br /> Grid
             </figcaption>
             </figure>
-          </picture>
         </div>
           <div className="imageBox split mt-m">
-            <picture>
-            <div className="shades"></div>
-              <source 
-                srcSet={imageFromAboveD}
-                media="(min-width: 40em)"
-                src={imageFromAboveD}
-              />
-                <img src={imageFromAboveM} alt="" className="imageBox__image" />
                 <figure className="imageBox__shape">
+                  <span className="shades"></span>
+                    <picture>
+                      <source 
+                        srcSet={imageFromAboveD}
+                        media="(min-width: 40em)"
+                      />
+                        <img src={imageFromAboveM} alt="" className="imageBox__image" />
+                    </picture>
                   <figcaption className="imageBox__caption">
                     From up<br /> Above VR
                   </figcaption>
                 </figure>
-            </picture>
-            <picture>
-            <div className="shades"></div>
-              <source 
-                srcSet={imagePocketBorealisD}
-                media="(min-width: 40em)"
-                src={imagePocketBorealisD}
-              />
-                <img src={imagePocketBorealisM} alt="" className="imageBox__image" />
                 <figure className="imageBox__shape">
+                  <span className="shades"></span>
+                    <picture>
+                      <source 
+                        srcSet={imagePocketBorealisD}
+                        media="(min-width: 40em)"
+                      />
+                        <img src={imagePocketBorealisM} alt="" className="imageBox__image" />
+                    </picture>
                   <figcaption className="imageBox__caption">
                   Pocket<br /> Borealis
                   </figcaption>
                 </figure>
-            </picture>
-            <picture>
-            <div className="shades"></div>
-              <source 
-                srcSet={imageCuriosityD}
-                media="(min-width: 40em)"
-                src={imagePocketBorealisD}
-              />
-              <img src={imageCuriosityM} alt="" className="imageBox__image" />
               <figure className="imageBox__shape">
+                <span className="shades"></span>
+                  <picture>
+                    <source 
+                      srcSet={imageCuriosityD}
+                      media="(min-width: 40em)"
+                    />
+                    <img src={imageCuriosityM} alt="" className="imageBox__image" />
+                  </picture>
                 <figcaption className="imageBox__caption">
                   The<br /> Curiosity
                 </figcaption>
               </figure>
-            </picture>
-            <picture>
-            <div className="shades"></div>
-              <source
-                srcSet={imageFisheyeD}
-                media="(min-width: 40em)"
-                src={imageFisheyeD}
-              />
-                <img src={imageFisheyeM} alt="" className="imageBox__image" />
                 <figure className="imageBox__shape">
+                  <span className="shades"></span>
+                    <picture>
+                      <source
+                        srcSet={imageFisheyeD}
+                        media="(min-width: 40em)"
+                      />
+                        <img src={imageFisheyeM} alt="" className="imageBox__image" />
+                    </picture>
                   <figcaption className="imageBox__caption">
                     Make it<br /> fisheye
                   </figcaption>
                 </figure>
-            </picture>
           </div>
       </div>
   )
